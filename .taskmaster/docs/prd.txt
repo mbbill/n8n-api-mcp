@@ -1,0 +1,104 @@
+# n8n MCP Server - Product Requirements Document
+
+## Product Overview
+Create a Model Context Protocol (MCP) server that enables AI chatbots (like Claude Desktop) to interact with n8n workflow automation platform. The server will provide tools for managing, editing, and executing n8n workflows through natural language commands.
+
+## Target Audience
+- n8n users who want to manage workflows through AI assistants
+- Developers using Claude Desktop or other MCP-compatible AI tools
+- Automation enthusiasts looking for conversational workflow management
+
+## Key Features & Requirements
+
+### Core Functionality
+1. **Workflow Management**
+   - List all workflows with filtering capabilities
+   - Create new workflows from natural language descriptions
+   - Update existing workflow configurations
+   - Delete workflows with safety confirmations
+   - Activate/deactivate workflows
+
+2. **Workflow Editing**
+   - Add nodes to workflows based on descriptions
+   - Modify node configurations and connections
+   - Update workflow settings and metadata
+   - Handle workflow connections and data flow
+
+3. **Execution Management**
+   - Trigger workflow executions
+   - Monitor execution status and results
+   - View execution history and logs
+   - Handle execution errors and debugging
+
+4. **Authentication & Security**
+   - Support n8n API key authentication
+   - Secure credential handling
+   - Rate limiting and error handling
+   - Validation of all operations
+
+### Technical Requirements
+1. **MCP Server Implementation**
+   - TypeScript/Node.js based server
+   - Follows MCP specification exactly
+   - Proper resource and tool definitions
+   - Error handling and logging
+
+2. **n8n API Integration**
+   - Full integration with n8n REST API
+   - Handle all workflow-related endpoints
+   - Support for credentials and user management
+   - Proper error mapping and handling
+
+3. **Configuration Management**
+   - Environment-based configuration
+   - n8n instance URL and API key management
+   - Configurable timeout and retry settings
+   - Development and production modes
+
+4. **Testing & Quality**
+   - Unit tests for all major functions
+   - Integration tests with mock n8n API
+   - Type safety throughout
+   - Code documentation and examples
+
+### User Experience
+1. **Natural Language Interface**
+   - Create workflows from plain English descriptions
+   - Intuitive commands for workflow operations
+   - Smart defaults and suggestions
+   - Clear error messages and guidance
+
+2. **Claude Desktop Integration**
+   - Easy setup with Claude Desktop configuration
+   - Seamless workflow management through chat
+   - Rich responses with workflow status and details
+   - Context-aware suggestions
+
+### Success Metrics
+- Successful integration with Claude Desktop
+- Ability to perform all major n8n operations through chat
+- Robust error handling and user feedback
+- Complete test coverage of core functionality
+- Clear documentation and setup instructions
+
+## Technical Constraints
+- Must follow MCP specification version 1.0+
+- Compatible with n8n API v1.1.1
+- Node.js 18+ runtime requirement
+- TypeScript for type safety
+- No external dependencies beyond essential packages
+
+## Implementation Phases
+1. **Phase 1**: Basic MCP server setup and n8n API client
+2. **Phase 2**: Core workflow management tools
+3. **Phase 3**: Advanced workflow editing capabilities
+4. **Phase 4**: Execution management and monitoring
+5. **Phase 5**: Testing, documentation, and deployment
+
+## Deliverables
+- Complete MCP server implementation
+- n8n API client library
+- Claude Desktop configuration examples
+- Comprehensive documentation
+- Test suite with good coverage
+- Deployment and setup guides
